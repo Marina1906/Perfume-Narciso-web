@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfume website</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<header class="header">
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <header class="header">
     <h1 class="header__title">
-        <span class="perfume">perfume</span><br>
-           <span class="menagerie">menagerie</span>
-        </h1>
+      <span class="perfume">perfume</span><br />
+      <span class="menagerie">menagerie</span>
+    </h1>
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item"><a class="nav-link" href="#">women’s</a></li>
@@ -18,20 +18,64 @@
         <li class="nav-item"><a class="nav-link" href="#">brands</a></li>
         <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
       </ul>
-      <img id="icon" src="🦆 icon _shopping cart outline_@2x.jpg" alt="cart pic">
-      <img id="photo" src= "Ellipse 1.png" alt="photo">
+      <img
+        id="icon"
+        src="🦆 icon _shopping cart outline_@2x.jpg"
+        alt="cart pic"
+      />
+      <img id="photo" src="Ellipse 1.png" alt="photo" />
     </nav>
   </header>
-<body>
+  <body>
     <main>
-        <section>
-          <div class="grid__gallery">
-            <div class="img-1"> <img src="Photo and Pink Frame.png" alt=""></div>
-            <div class="img-2"></div> <img src="Frame 6.png" alt="">
-            <div class="img-3"></div><img src="Frame 4.png" alt="">
-            <div class="img-4"></div><img src="Frame 5.png" alt="">
+      <section>
+        <div class="container">
+          <div class="container_img">
+            <img src="Photo and Pink Frame.png" alt="" />
           </div>
-        </section>
-      </main>
-</body>
+          <div class="container_description">
+            <h2>NARCISO</h2>
+            <h1>Ruby Orchid Fragrance</h1>
+            <h3>Eau de Parfum for her</h3>
+            <p class="perfume_description">
+              Experience the iconic original female fragrance by Narciso.
+              Addictive floral notes with the warm woody undertones inspires a
+              whirlwind of sweet sensations, transporting you to a world of
+              floral fantasy.
+            </p>
+            <p class="discount_price">124.00€</p>
+            <p class="full_price">184.00€</p>
+            <ul class="price_list">
+              <li class="small">
+                <span class="amount">30ml</span> <br />
+                <span class="price">50.00€</span>
+              </li>
+              <li class="medium">
+                <span class="amount">50ml</span> <br />
+                <span class="price">100.00€</span>
+              </li>
+              <li class="big">
+                <span class="amount">80ml</span> <br />
+                <span class="price">124.00€</span>
+              </li>
+            </ul>
+            <p id="order_number">
+              <span class="minus">&#8722;</span>
+              <span class="number">1</span>
+              <span class="plus">&#43;</span>
+              <button class="button">Add to cart</button>
+            </p>
+          </div>
+        </div>
+        <div class="grid__gallery">
+          <div class="img-2"></div>
+          <img src="Frame 6.png" alt="" />
+          <div class="img-3"></div>
+          <img src="Frame 4.png" alt="" />
+          <div class="img-4"></div>
+          <img src="Frame 5.png" alt="" />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

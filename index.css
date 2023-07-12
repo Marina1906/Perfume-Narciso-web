@@ -140,7 +140,7 @@ body {
   --clr-white-100: #ffffff;
   --clr-pink-300: #fbebeb;
   --clr-black-900: #001;
-  --clr-black-800:rgba(35, 31, 32, 1);
+  --clr-black-800: rgba(35, 31, 32, 1);
   --clr-gray-300: linear-gradient(0deg, #fcfcfc, #fcfcfc);
   --clr-gray-900: #868584;
   --clr-gray-800: rgba(134, 133, 132, 1);
@@ -201,12 +201,24 @@ body {
   padding-right: 0.2rem;
 }
 .img div {
-    object-fit: cover;
-  }
-  .grid__gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 620px 1fr;
-  }
-
-  
+  object-fit: cover;
+}
+.grid__gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5rem;
+}
+.container_img {
+  object-fit: cover;
+  padding-left: 5rem;
+}
+.container_description {
+  align-items: center;
+  padding-top: 3rem;
+  padding-right: 3rem;
+}
