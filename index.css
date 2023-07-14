@@ -135,9 +135,13 @@ table {
 }
 body {
   font-family: Lora, serif;
+  background-color: var(--clr-background-200);
 }
 :root {
   --clr-white-100: #ffffff;
+  --clr-white-150: rgba(255, 255, 255, 1);
+  --clr-background-200: linear-gradient(0deg, #fcfcfc, #fcfcfc),
+    linear-gradient(0deg, #e9e9e9, #e9e9e9);
   --clr-pink-300: #fbebeb;
   --clr-black-900: #001;
   --clr-black-800: rgba(35, 31, 32, 1);
@@ -216,9 +220,11 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 5rem;
+  margin-bottom: 1rem;
 }
 .container_img {
   object-fit: cover;
+  padding-top: 1rem;
   padding-left: 5rem;
 }
 .container_description {
@@ -261,12 +267,69 @@ p.full_price {
   text-decoration: line-through;
   padding-bottom: 1rem;
 }
+li {
+  margin-left: 0.8rem;
+}
 .small,
 .medium,
 .big {
-  padding-right: 1.5rem;
+  padding-right: 0.8rem;
   border: 1px solid var(--clr-black-900);
   border-radius: 0.5rem;
-  padding-left: 1.2rem;
+  padding-left: 0.8rem;
   margin-bottom: 1.2rem;
+}
+.amount {
+  font-size: var(--fs-4);
+  color: var(--clr-black-900);
+  font-weight: 500;
+}
+.price {
+  font-size: var(--fs-5);
+  color: var(--clr-black-900);
+  font-weight: 300;
+}
+.small,
+.medium {
+  background-color: var(--clr-gray-300);
+}
+.big {
+  border: 3px solid var(--clr-black-900);
+  background-color: var(--clr-pink-300);
+}
+.minus,
+.plus {
+  font-size: var(--fs-3);
+  color: var(--clr-black-800);
+  font-weight: 800;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.number {
+  font-size: var(--fs-3);
+  font-weight: 400;
+  color: var(--clr-gray-800);
+}
+.button {
+  border: 1px solid var(--clr-black-900);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 2rem;
+  font-size: var(--fs-3);
+  font-weight: 500;
+  color: var(--clr-white-150);
+  background-color: var(--clr-black-900);
+}
+.flex__container {
+  display: flex;
+  flex-direction: row;
+ justify-content:center;
+ gap: 0.8rem;
+ padding-left: 7rem;
+  margin-bottom: 3rem;
+  max-width: 40%;
 }
