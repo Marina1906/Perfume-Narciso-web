@@ -178,6 +178,7 @@ body {
   display: flex;
   align-items: center;
   margin-right: 20px;
+  margin-bottom: 1rem;
 }
 
 .nav-list {
@@ -232,7 +233,7 @@ body {
 .container_img img {
   margin: 0 auto;
 }
-.flex__container{
+.flex__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -244,8 +245,6 @@ body {
 }
 .container_description {
   align-self: center;
-  padding-top: 3rem;
-  padding-right: 3rem;
 }
 h2 {
   text-transform: uppercase;
@@ -270,12 +269,12 @@ p.perfume_description {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-p.discount_price {
+.discount_price {
   font-size: var(--fs-1);
   font-weight: 400;
   color: var(--clr-black-900);
 }
-p.full_price {
+.full_price {
   font-size: var(--fs-4);
   font-weight: 400;
   color: var(--clr-gray-800);
@@ -285,14 +284,14 @@ p.full_price {
 li {
   margin-left: 0.8rem;
 }
-.small,
-.medium,
-.big {
-  padding-right: 0.8rem;
+.price-card {
+  padding: 0.8rem;
   border: 1px solid var(--clr-black-900);
   border-radius: 0.5rem;
-  padding-left: 0.8rem;
-  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.price-card.active {
+  background-color: var(--clr-pink-300);
 }
 .amount {
   font-size: var(--fs-4);
@@ -328,17 +327,22 @@ li {
   color: var(--clr-gray-800);
 }
 .button {
+  text-wrap: nowrap;
   border: 1px solid var(--clr-black-900);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-left: 2rem;
   font-size: var(--fs-3);
   font-weight: 500;
   color: var(--clr-white-150);
   background-color: var(--clr-black-900);
 }
+.cart-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 @media screen and (max-width: 360px) {
   .nav-list {
     display: none;
@@ -385,12 +389,31 @@ li {
     object-fit: cover;
   }
 
-  .container_description,
-  h2,
-  h1,
-  h3,
-  p {
+  .container_description {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  .cart-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 1rem;
+  }
+  .full_price {
+    margin-top: 1rem;
+  }
+  .price_list {
+    display: none;
+  }
+  .cart-container {
+    margin-top: 1rem;
+  }
+  .button {
+    margin-top: 1rem;
   }
 }
